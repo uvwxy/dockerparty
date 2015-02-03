@@ -7,12 +7,14 @@ Maybe someone might find this useful.
 #### Building
 
 Server:
+
 '''
 cd server
 make image
 '''
 
 Client:
+
 '''
 cd client
 make image
@@ -21,14 +23,17 @@ make image
 #### Running
 
 Start the server:
+
 '''
 docker run --rm -it uvwxy/dockerparty-server
 
 AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.205. Set the 'ServerName' directive globally to suppress this message
 '''
+
 Write down the IP and use it below.
 
 Start the clients:
+
 '''
 bash start_client.sh 172.17.0.205
 '''
